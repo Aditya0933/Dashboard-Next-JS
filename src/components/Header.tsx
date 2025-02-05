@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 const Header = () => {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isSidebarOpen, setSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
@@ -29,8 +29,8 @@ const Header = () => {
       <div className="flex items-center space-x-4">
         <div className="flex items-center space-x-2">
           <img
-            src="/images/FindriyaLogo.png"
-            alt="Company Logo"
+            src="/images/brandlogo.png"
+            alt="Company Logo 1"
             className="h-8 w-auto"
           />
         </div>
@@ -132,15 +132,15 @@ const Header = () => {
               {/* Outer profile image as a perfect square */}
               <div className="w-10 h-10 overflow-hidden">
                 <img
-                  src="/images/1image.jpg"
-                  alt="Profile"
-                  className="w-full h-full object-cover"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB9jjTt0IjvN5rBOsqyakn-5enpSgAEXIj5lnrmzrYoRw-ncAfBO4DH-CncEoXel_yofU&usqp=CAU"
+                  alt="UserProfile"
+                  className="w-full h-full object-cover rounded-full"
                 />
               </div>
               {/* Name and role (shown in larger screens) */}
               <div className="hidden md:flex flex-col ml-2 text-left">
-                <span className="font-bold">VAIBHAV JINDAL</span>
-                <span className="text-brown-600 text-sm">Admin</span>
+                <span className="font-bold">Aditya Singh Parihar</span>
+                <span className="text-brown-600 text-sm">Super Admin</span>
               </div>
             </button>
           </DropdownMenu.Trigger>
@@ -150,20 +150,20 @@ const Header = () => {
             <div className="p-4 flex items-center space-x-3">
               <div className="w-10 h-10 overflow-hidden">
                 <img
-                  src="/images/1image.jpg"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB9jjTt0IjvN5rBOsqyakn-5enpSgAEXIj5lnrmzrYoRw-ncAfBO4DH-CncEoXel_yofU&usqp=CAU"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="flex-grow">
                 <div className="flex items-center justify-between">
-                  <span className="font-semibold">VAIBHAV JINDAL</span>
+                  <span className="font-semibold">Aditya Singh Parihar</span>
                   <span className="text-xs bg-green-500 text-white px-2 py-1 rounded-md">
                     Pro
                   </span>
                 </div>
                 <span className="text-sm text-gray-500">
-                  vaibhav.jindal@example.com
+                  adityasingh@example.com
                 </span>
               </div>
             </div>
@@ -181,6 +181,9 @@ const Header = () => {
               </DropdownMenu.Item>
               <DropdownMenu.Item className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                 My Statements
+              </DropdownMenu.Item>
+              <DropdownMenu.Item className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                My Work
               </DropdownMenu.Item>
             </div>
 
